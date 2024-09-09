@@ -1,0 +1,277 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url('../img/bg.png');		
+}
+.sidebar-nav {
+  padding: 9px 0;
+}
+.navbar-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #02335C;
+  background-image: -moz-linear-gradient(top, #02335C, #02335C);
+  background-image: -ms-linear-gradient(top, #02335C, #02335C);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#02335C), to(#02335C));
+  background-image: -webkit-linear-gradient(top, #02335C, #02335C);
+  background-image: -o-linear-gradient(top, #02335C, #02335C);
+  background-image: linear-gradient(top, #02335C, #02335C);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'02335C, endColorstr='#'02335C, GradientType=0);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 8px 20px 12px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1;
+  color: #ffffff;
+}
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  font-size: 13px;
+  color: #d3d3d3;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar .divider-vertical {
+  height: 40px;
+  width: 1px;
+  margin: 0 9px;
+  overflow: hidden;
+  background-color: #00260e;
+  border-right: 1px solid #134024;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #51A351;
+}
+a {
+  color: #02335C;
+}
+a:hover {
+  color: #00260e;
+}
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  background-color: #02335C;
+}
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background-color: ##51A351;
+}
+.dropdown-menu .nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+span.user-actions, td div.btn-group {
+  visibility: hidden;
+}
+table {
+  background-color: #fdfdfd;
+}
+tr.pending-user:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+
+tr.pending-user2:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-user3:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-consultarmov:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-consultarben:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-contratoexclusao:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-contratodependente:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+
+tr.pending-user-inclusao:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-user-inclusao2:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+tr.pending-user-exclusao:hover span.user-actions, tr.list-users:hover td div.btn-group, tr.list-roles:hover td div.btn-group {
+  visibility:visible;
+}
+
+/*
+ * Responsive table
+ */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+	.table th, .table td {
+	  padding-left: 50%;
+	  border-top:0;
+	}
+	table, thead, tbody, th, td, tr {
+	  display: block;
+	}
+	thead tr {
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
+	tr { 
+	  border: 1px solid #ccc; 
+	}
+	td {
+	  border: none;
+	  border-bottom: 1px solid #eee;
+	  position: relative;
+	  padding-left: 0%;
+	}
+	td:before {
+	  position: absolute;
+	  top: 6px;
+	  left: 6px;
+	  width: 45%;
+	  padding-right: 10px;
+	  white-space: nowrap;
+	}
+	.list-users td:nth-of-type(1):before, .pending-user td:nth-of-type(1):before { content: "U"; }
+	.list-users td:nth-of-type(2):before, .pending-user td:nth-of-type(2):before { content: "Dependente"; }
+	.list-users td:nth-of-type(3):before, .pending-user td:nth-of-type(3):before { content: "Nome"; }
+	.list-users td:nth-of-type(4):before, .pending-user td:nth-of-type(4):before { content: "CPF"; }
+	.list-users td:nth-of-type(7):before, .pending-user td:nth-of-type(5):before { content: "Plano"; }
+	.list-users td:nth-of-type(5):before, .pending-user td:nth-of-type(6):before { content: "C.C"; }
+	.list-users td:nth-of-type(6):before, .pending-user td:nth-of-type(7):before { content: "Reembolso"; }
+	.list-users td:nth-of-type(8):before, .pending-user td:nth-of-type(8):before { content: "Remover"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-user2 td:nth-of-type(1):before { content: "Vigência"; }
+	.list-users td:nth-of-type(2):before, .pending-user2 td:nth-of-type(2):before { content: "Ramo"; }
+	.list-users td:nth-of-type(3):before, .pending-user2 td:nth-of-type(3):before { content: "Operadora"; }
+	.list-users td:nth-of-type(4):before, .pending-user2 td:nth-of-type(4):before { content: "Vencimento"; }
+	.list-users td:nth-of-type(7):before, .pending-user2 td:nth-of-type(5):before { content: "Corte Inclusão"; }
+	.list-users td:nth-of-type(5):before, .pending-user2 td:nth-of-type(6):before { content: "Corte Exclusão"; }
+	.list-users td:nth-of-type(6):before, .pending-user2 td:nth-of-type(7):before { content: "Vidas"; }
+	.list-users td:nth-of-type(8):before, .pending-user2 td:nth-of-type(8):before { content: "Mensalidade"; }
+	.list-users td:nth-of-type(9):before, .pending-user2 td:nth-of-type(9):before { content: "Documentos"; }
+	.list-users td:nth-of-type(10):before, .pending-user2 td:nth-of-type(10):before { content: "Visualizar"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-user3 td:nth-of-type(1):before { content: "Tipo"; }
+	.list-users td:nth-of-type(2):before, .pending-user3 td:nth-of-type(2):before { content: "Contrato"; }
+	.list-users td:nth-of-type(3):before, .pending-user3 td:nth-of-type(3):before { content: "Solicitado por"; }
+	.list-users td:nth-of-type(4):before, .pending-user3 td:nth-of-type(4):before { content: "Inicio cobertura"; }
+	.list-users td:nth-of-type(7):before, .pending-user3 td:nth-of-type(5):before { content: "Nome"; }
+	.list-users td:nth-of-type(5):before, .pending-user3 td:nth-of-type(6):before { content: "Protocolo"; }
+	.list-users td:nth-of-type(6):before, .pending-user3 td:nth-of-type(7):before { content: "Anexos"; }
+	.list-users td:nth-of-type(8):before, .pending-user3 td:nth-of-type(8):before { content: "Visualizar"; }
+	.list-users td:nth-of-type(9):before, .pending-user3 td:nth-of-type(9):before { content: "Anular"; }
+	.list-users td:nth-of-type(10):before, .pending-user3 td:nth-of-type(10):before { content: "Status"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-consultarmov td:nth-of-type(1):before { content: "Tipo"; }
+	.list-users td:nth-of-type(2):before, .pending-consultarmov td:nth-of-type(2):before { content: "Contrato"; }
+	.list-users td:nth-of-type(3):before, .pending-consultarmov td:nth-of-type(3):before { content: "Solicitado por"; }
+	.list-users td:nth-of-type(7):before, .pending-consultarmov td:nth-of-type(4):before { content: "Nome"; }
+	.list-users td:nth-of-type(5):before, .pending-consultarmov td:nth-of-type(5):before { content: "Protocolo"; }
+	.list-users td:nth-of-type(6):before, .pending-consultarmov td:nth-of-type(6):before { content: "Anexos"; }
+	.list-users td:nth-of-type(8):before, .pending-consultarmov td:nth-of-type(7):before { content: "Visualizar"; }
+	.list-users td:nth-of-type(9):before, .pending-consultarmov td:nth-of-type(8):before { content: "Anular"; }
+	.list-users td:nth-of-type(10):before, .pending-consultarmov td:nth-of-type(9):before { content: "Status"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-consultarben td:nth-of-type(1):before { content: "Tipo"; }
+	.list-users td:nth-of-type(2):before, .pending-consultarben td:nth-of-type(2):before { content: "Nome"; }
+	.list-users td:nth-of-type(3):before, .pending-consultarben td:nth-of-type(3):before { content: "CPF"; }
+	.list-users td:nth-of-type(7):before, .pending-consultarben td:nth-of-type(4):before { content: "Plano"; }
+	.list-users td:nth-of-type(5):before, .pending-consultarben td:nth-of-type(5):before { content: "Centro de Custo"; }
+	.list-users td:nth-of-type(6):before, .pending-consultarben td:nth-of-type(6):before { content: "Status"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-contratoexclusao td:nth-of-type(1):before { content: "Tipo"; }
+	.list-users td:nth-of-type(2):before, .pending-contratoexclusao td:nth-of-type(2):before { content: "Nome"; }
+	.list-users td:nth-of-type(3):before, .pending-contratoexclusao td:nth-of-type(3):before { content: "CPF"; }
+	.list-users td:nth-of-type(7):before, .pending-contratoexclusao td:nth-of-type(4):before { content: "Plano"; }
+	.list-users td:nth-of-type(5):before, .pending-contratoexclusao td:nth-of-type(5):before { content: "Centro de Custo"; }
+	.list-users td:nth-of-type(6):before, .pending-contratoexclusao td:nth-of-type(6):before { content: "Status"; }
+	.list-users td:nth-of-type(7):before, .pending-contratoexclusao td:nth-of-type(7):before { content: "Reembolso"; }
+	.list-users td:nth-of-type(8):before, .pending-contratoexclusao td:nth-of-type(8):before { content: "Excluir"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-contratodependente td:nth-of-type(1):before { content: "Tipo"; }
+	.list-users td:nth-of-type(2):before, .pending-contratodependente td:nth-of-type(2):before { content: "Inclusão"; }
+	.list-users td:nth-of-type(3):before, .pending-contratodependente td:nth-of-type(3):before { content: "Nome"; }
+	.list-users td:nth-of-type(4):before, .pending-contratodependente td:nth-of-type(4):before { content: "CPF"; }
+	.list-users td:nth-of-type(5):before, .pending-contratodependente td:nth-of-type(5):before { content: "Plano"; }
+
+
+	
+	.list-users td:nth-of-type(1):before, .pending-user-inclusao td:nth-of-type(1):before { content: "Incluir"; }
+	.list-users td:nth-of-type(2):before, .pending-user-inclusao td:nth-of-type(2):before { content: "Ramo"; }
+	.list-users td:nth-of-type(3):before, .pending-user-inclusao td:nth-of-type(3):before { content: "Operadora"; }
+	.list-users td:nth-of-type(4):before, .pending-user-inclusao td:nth-of-type(4):before { content: "Vigencia"; }
+	.list-users td:nth-of-type(7):before, .pending-user-inclusao td:nth-of-type(5):before { content: "Vencimento"; }
+	.list-users td:nth-of-type(5):before, .pending-user-inclusao td:nth-of-type(6):before { content: "Data Corte Inclusao"; }
+	.list-users td:nth-of-type(6):before, .pending-user-inclusao td:nth-of-type(7):before { content: "Data Corte Exclusao"; }
+	.list-users td:nth-of-type(8):before, .pending-user-inclusao td:nth-of-type(8):before { content: "Vidas"; }
+	.list-users td:nth-of-type(9):before, .pending-user-inclusao td:nth-of-type(9):before { content: "Mensalidade"; }
+	.list-users td:nth-of-type(10):before, .pending-user-inclusao td:nth-of-type(10):before { content: "Status"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-user-inclusao2 td:nth-of-type(1):before { content: "Consultar Titulares"; }
+	.list-users td:nth-of-type(2):before, .pending-user-inclusao2 td:nth-of-type(2):before { content: "Ramo"; }
+	.list-users td:nth-of-type(3):before, .pending-user-inclusao2 td:nth-of-type(3):before { content: "Operadora"; }
+	.list-users td:nth-of-type(4):before, .pending-user-inclusao2 td:nth-of-type(4):before { content: "Vigencia"; }
+	.list-users td:nth-of-type(7):before, .pending-user-inclusao2 td:nth-of-type(5):before { content: "Vencimento"; }
+	.list-users td:nth-of-type(5):before, .pending-user-inclusao2 td:nth-of-type(6):before { content: "Data Corte Inclusao"; }
+	.list-users td:nth-of-type(6):before, .pending-user-inclusao2 td:nth-of-type(7):before { content: "Data Corte Exclusao"; }
+	.list-users td:nth-of-type(8):before, .pending-user-inclusao2 td:nth-of-type(8):before { content: "Vidas"; }
+	.list-users td:nth-of-type(9):before, .pending-user-inclusao2 td:nth-of-type(9):before { content: "Mensalidade"; }
+	.list-users td:nth-of-type(10):before, .pending-user-inclusao2 td:nth-of-type(10):before { content: "Status"; }
+	
+	.list-users td:nth-of-type(1):before, .pending-user-exclusao td:nth-of-type(1):before { content: "Consultar Beneficiarios"; }
+	.list-users td:nth-of-type(2):before, .pending-user-exclusao td:nth-of-type(2):before { content: "Ramo"; }
+	.list-users td:nth-of-type(3):before, .pending-user-exclusao td:nth-of-type(3):before { content: "Operadora"; }
+	.list-users td:nth-of-type(4):before, .pending-user-exclusao td:nth-of-type(4):before { content: "Vigencia"; }
+	.list-users td:nth-of-type(7):before, .pending-user-exclusao td:nth-of-type(5):before { content: "Vencimento"; }
+	.list-users td:nth-of-type(5):before, .pending-user-exclusao td:nth-of-type(6):before { content: "Data Corte Inclusao"; }
+	.list-users td:nth-of-type(6):before, .pending-user-exclusao td:nth-of-type(7):before { content: "Data Corte Exclusao"; }
+	.list-users td:nth-of-type(8):before, .pending-user-exclusao td:nth-of-type(8):before { content: "Vidas"; }
+	.list-users td:nth-of-type(9):before, .pending-user-exclusao td:nth-of-type(9):before { content: "Mensalidade"; }
+	.list-users td:nth-of-type(10):before, .pending-user-exclusao td:nth-of-type(10):before { content: "Status"; }
+	
+	.list-roles td:nth-of-type(1):before { content: "U"; }
+	.list-roles td:nth-of-type(2):before { content: "Dependente"; }
+	.list-roles td:nth-of-type(3):before { content: "nome"; }
+	.list-roles td:nth-of-type(4):before { content: "CPF"; }
+	.list-roles td:nth-of-type(5):before { content: "Plano"; }
+	.list-roles td:nth-of-type(6):before { content: "C.C"; }
+	.list-roles td:nth-of-type(7):before { content: "Reembolso"; }
+	.list-roles td:nth-of-type(8):before { content: "Remover"; }
+}
+
+
